@@ -5,18 +5,18 @@
 </template>
 
 <script>
-  import config from "./config"
+import config from "./config";
 
-  export default {
-    name: 'app',
+export default {
+  name: "app",
 
-    created(){
-      let store = this.$store;
-      let token = localStorage.getItem(config.AUTH);
+  created(){
+    let store = this.$store;
+    let token = localStorage.getItem(config.AUTH);
 
-      if(token) store.commit("token", token);
-    }
+    if(token) store.commit("token", token);
   }
+};
 </script>
 
 <style>

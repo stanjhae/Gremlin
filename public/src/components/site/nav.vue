@@ -1,16 +1,15 @@
 <template>
   <div :class="['nav-container', {'fixed-nav': isFixed}]">
     <div v-if="isFixed" class="nav-logo">
-      <a target="_blank" href="https://www.github.com/e-oj">
-        <span class="bracket">&lt;</span>@e-oj<span class="bracket">&gt;</span>
+      <a target="_blank" href="https://www.github.com/stanjhae">
+        &lt;@stanjhae&gt;
       </a>
     </div>
 
-    <ul class="nav">
-      <li><router-link tag="a" to="/">Home</router-link></li>
-      <li><router-link tag="a" to="/story">Story</router-link></li>
-      <li><router-link tag="a" to="/links">Links</router-link></li>
-    </ul>
+    <!--<ul class="nav">-->
+      <!--<li><router-link tag="a" to="/">Home</router-link></li>-->
+      <!--<li><router-link tag="a" to="/story">Story</router-link></li>-->
+    <!--</ul>-->
   </div>
 </template>
 
@@ -49,7 +48,6 @@ export default {
     align-items: center;
     justify-content: center;
     font-size: 32px;
-    margin-left: 100px;
     min-width: 120px;
     background-color: #42b983;
   }
@@ -70,7 +68,7 @@ export default {
   }
 
   .fixed-nav{
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     z-index: 10;
     width: 100%;
@@ -137,6 +135,8 @@ export default {
   @media screen and (max-width: 1500px){
     .fixed-nav{
       font-size: 20px;
+      display: flex;
+      justify-content: center;
       /*height: 70px;*/
     }
   }
