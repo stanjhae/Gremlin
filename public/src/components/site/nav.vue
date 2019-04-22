@@ -52,19 +52,9 @@ export default {
     background-color: #42b983;
   }
 
-  .nav-logo .bracket{
-    color: #24292e;
-    opacity: 0;
-  }
-
   .nav-logo a{
     text-decoration: none;
     color: #24292e;
-  }
-
-  .nav-logo a:hover .bracket{
-    opacity: 1;
-    transition: all 0.2s ease-in-out;
   }
 
   .fixed-nav{
@@ -137,28 +127,12 @@ export default {
       font-size: 20px;
       display: flex;
       justify-content: center;
-      /*height: 70px;*/
     }
   }
 
   @media screen and (max-width: 640px){
-    .fixed-nav{
-      font-size: 18px;
-      justify-content: center;
-    }
-
-    .fixed-nav .nav{
-      margin-left: 0;
-      width: 80%;
-      justify-content: space-between;
-    }
-
     .fixed-nav .nav li, .fixed-nav .nav li:last-child{
       margin: 0 10px;
-    }
-
-    .nav-logo{
-      display: none;
     }
   }
 </style>

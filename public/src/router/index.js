@@ -6,7 +6,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 
-import Home from "../components/site/home";
+import Home from "../components/site/home/home";
 import ClientExtBlog from "../components/site/collection/collection";
 import Story from "../components/site/story/story";
 
